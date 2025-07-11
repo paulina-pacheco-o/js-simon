@@ -5,3 +5,19 @@ for (let i = 0; i < 5; i++) {
 
   randomNumbers.innerHTML += randomNumber + " ";
 }
+
+//AGGIUNGO IL TIMER DI 30 SEC
+const countdown = document.getElementById(`countdown`);
+let seconds = 11;
+
+const interValid = setInterval(() => {
+  console.log(seconds)
+  seconds--;
+
+  if (seconds === 0) {
+    clearInterval(interValid)
+  }
+
+  countdown.innerHTML = seconds
+
+}, 1000);

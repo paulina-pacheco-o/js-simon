@@ -19,6 +19,12 @@ const interValid = setInterval(() => {
     randomNumbers.classList.add(`d-none`)
     const answers = document.getElementById(`answers-form`)
     answers.classList.remove(`d-none`)
+
+    button.addEventListener(`click`, function (event) {
+      event.preventDefault();
+      const button = document.getElementById(`message`);
+
+    })
   }
 
   countdown.innerHTML = seconds
